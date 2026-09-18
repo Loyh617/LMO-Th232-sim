@@ -1,0 +1,12 @@
+#
+# Initialize kerne
+/run/initialize
+#
+/control/verbose 1
+/run/verbose 1
+#
+#设定一个“超长寿命判定阈值”，只有超过这个寿命的核素，才会被RDM特殊处理。
+#保证即使对于半衰期极长的Th-232，RDM也会尝试使其衰变，而不是当成稳定核处理。
+/process/had/rdm/thresholdForVeryLongDecayTime 1e60 year
+#
+/run/beamOn 100000000

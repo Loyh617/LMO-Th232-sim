@@ -1,0 +1,13 @@
+# Build directory (all build artifacts)
+build/
+
+# Simulation output data (regenerable)
+*.root
+
+# ACLiC compiled-macro artifacts
+*.so
+*.d
+*.pcm
+
+# Local Claude Code settings
+.claude/settings.local.json
