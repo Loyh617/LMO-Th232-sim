@@ -16,7 +16,7 @@ source <root-install>/bin/thisroot.sh
 ```
 
 ```bash
-cd CUPID-CJPL
+cd LMO-Th232-sim
 mkdir -p build && cd build
 cmake ..
 make -j$(nproc)
@@ -27,7 +27,7 @@ make -j$(nproc)
 **ROOT macros live in `macros/`** (`EnergyReconstruction.C`, `spectrum.C`, `ParticleTimeInformation.C`, `Trigger.C`, `PileUp.C`). Run them from `build/` (the input/output ROOT files are there):
 
 ```bash
-cd CUPID-CJPL/build
+cd LMO-Th232-sim/build
 root -l
 .L ../macros/EnergyReconstruction.C+
 EnergyReconstruction()                  # or batch: root -l -b -q ../macros/EnergyReconstruction.C+

@@ -1,4 +1,4 @@
-# CUPID-CJPL Bolometer Simulation
+# LMO-Th232-sim
 
 Geant4 Monte Carlo simulation of a dual-crystal LMO (Li₂MoO₄) bolometer detector
 for the CUPID-CJPL experiment, with a Th-232 radioactive source for energy
