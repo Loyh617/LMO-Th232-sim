@@ -24,13 +24,13 @@
 // ********************************************************************
 //
 /// \file RunAction.cc
-/// \brief Implementation of the B1::RunAction class
+/// \brief Implementation of the LMOTh232Sim::RunAction class
 
 #include "RunAction.hh"
 
 #include "G4AnalysisManager.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 RunAction::RunAction()

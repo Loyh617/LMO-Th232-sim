@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file SteppingAction.cc
-/// \brief Implementation of the B1::SteppingAction class
+/// \brief Implementation of the LMOTh232Sim::SteppingAction class
 
 #include "SteppingAction.hh"
 #include "EventAction.hh"
@@ -36,7 +36,7 @@
 #include "G4RunManager.hh"
 
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 SteppingAction::SteppingAction(EventAction* event)

@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file ActionInitialization.cc
-/// \brief Implementation of the B1::ActionInitialization class
+/// \brief Implementation of the LMOTh232Sim::ActionInitialization class
 
 #include "ActionInitialization.hh"
 
@@ -33,10 +33,9 @@
 #include "RunAction.hh"
 #include "SteppingAction.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void ActionInitialization::BuildForMaster() const
 {
@@ -44,7 +43,6 @@ void ActionInitialization::BuildForMaster() const
   SetUserAction(runAction);
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void ActionInitialization::Build() const
 {
@@ -59,6 +57,5 @@ void ActionInitialization::Build() const
   SetUserAction(new SteppingAction(eventAction));
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace LMOTh232Sim

@@ -27,12 +27,12 @@
 /// \file B3/B3a/include/PhysicsList.hh
 /// \brief Definition of the B3::PhysicsList class
 
-#ifndef B1PhysicsList_h
-#define B1PhysicsList_h 1
+#ifndef LMOTh232SimPhysicsList_h
+#define LMOTh232SimPhysicsList_h 1
 
 #include "G4VModularPhysicsList.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 /// Modular physics list
@@ -57,6 +57,5 @@ protected:
 
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

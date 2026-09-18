@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file DetectorConstruction.cc
-/// \brief Implementation of the B1::DetectorConstruction class
+/// \brief Implementation of the LMOTh232Sim::DetectorConstruction class
 
 #include "DetectorConstruction.hh"
 
@@ -38,10 +38,9 @@
 #include "G4SystemOfUnits.hh"
 #include "G4Trd.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {
@@ -313,6 +312,5 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   return physWorld;
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace LMOTh232Sim

@@ -24,16 +24,16 @@
 // ********************************************************************
 //
 /// \file SteppingAction.hh
-/// \brief Definition of the B1::SteppingAction class
+/// \brief Definition of the LMOTh232Sim::SteppingAction class
 
-#ifndef B1SteppingAction_h
-#define B1SteppingAction_h 1
+#ifndef LMOTh232SimSteppingAction_h
+#define LMOTh232SimSteppingAction_h 1
 
 #include "G4UserSteppingAction.hh"
 
 class G4LogicalVolume;
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 class EventAction;

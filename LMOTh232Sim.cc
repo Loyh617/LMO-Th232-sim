@@ -23,8 +23,8 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file exampleB1.cc
-/// \brief Main program of the basic/B1 example
+/// \file LMOTh232Sim.cc
+/// \brief Main program of the LMO-Th232-sim project (derived from the Geant4 basic example B1)
 
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
@@ -39,9 +39,8 @@
 #include "G4RadioactiveDecayPhysics.hh"
 // #include "Randomize.hh"
 
-using namespace B1;
+using namespace LMOTh232Sim;
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 int main(int argc, char** argv)
 {
@@ -73,7 +72,7 @@ int main(int argc, char** argv)
   // physicsList->SetVerboseLevel(1);
   // physicsList->RegisterPhysics(new G4RadioactiveDecayPhysics());
   // runManager->SetUserInitialization(physicsList);
-  runManager->SetUserInitialization(new B1::PhysicsList());
+  runManager->SetUserInitialization(new LMOTh232Sim::PhysicsList());
 
   // User action initialization
   runManager->SetUserInitialization(new ActionInitialization());
@@ -114,4 +113,3 @@ int main(int argc, char** argv)
   delete runManager;
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo.....

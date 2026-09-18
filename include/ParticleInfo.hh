@@ -5,7 +5,7 @@
 #include "globals.hh"
 #include "G4ThreeVector.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 struct ParticleInfo

@@ -41,13 +41,13 @@ Source the Geant4 and ROOT environment scripts before running.
 **Batch mode** (1×10⁸ Th-232 decays, from the build directory):
 
 ```bash
-./exampleB1 run.mac
+./LMOTh232Sim run.mac
 ```
 
 **Interactive mode** (with visualization):
 
 ```bash
-./exampleB1
+./LMOTh232Sim
 ```
 
 Output: `LMO_Th232.root` — two TTrees (`Crystal1`, `Crystal2`), per-track rows
@@ -100,6 +100,7 @@ with a Gaussian fit to the 2614.5 keV Tl-208 line (exclude residual surface-esca
 
 ## Notes
 
+- Derived from the Geant4 basic example B1 (the `B1` namespace has been renamed `LMOTh232Sim`).
 - The ntuple structure (column order) is fixed by `RunAction`/`EventAction`;
   the reconstruction macros must be kept in sync with it.
 - `run.mac` in `build/` is refreshed from the source copy by CMake; edit the

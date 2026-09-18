@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file EventAction.hh
-/// \brief Definition of the B1::EventAction class
+/// \brief Definition of the LMOTh232Sim::EventAction class
 
 #ifndef EventAction_h
 #define EventAction_h 1
@@ -36,7 +36,7 @@
 #include "G4UserEventAction.hh"
 #include "globals.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 class RunAction;

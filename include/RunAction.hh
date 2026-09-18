@@ -24,16 +24,16 @@
 // ********************************************************************
 //
 /// \file RunAction.hh
-/// \brief Definition of the B1::RunAction class
+/// \brief Definition of the LMOTh232Sim::RunAction class
 
-#ifndef B1RunAction_h
-#define B1RunAction_h 1
+#ifndef LMOTh232SimRunAction_h
+#define LMOTh232SimRunAction_h 1
 
 #include "G4UserRunAction.hh"
 
 class G4Run;
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 class RunAction : public G4UserRunAction

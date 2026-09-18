@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file EventAction.cc
-/// \brief Implementation of the B1::EventAction class
+/// \brief Implementation of the LMOTh232Sim::EventAction class
 
 #include "EventAction.hh"
 #include "RunAction.hh"
@@ -33,7 +33,7 @@
 #include "G4Event.hh"
 #include "G4SystemOfUnits.hh"
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 EventAction::EventAction(RunAction* runAction)

@@ -24,17 +24,17 @@
 // ********************************************************************
 //
 /// \file PrimaryGeneratorAction.hh
-/// \brief Definition of the B1::PrimaryGeneratorAction class
+/// \brief Definition of the LMOTh232Sim::PrimaryGeneratorAction class
 
-#ifndef B1PrimaryGeneratorAction_h
-#define B1PrimaryGeneratorAction_h 1
+#ifndef LMOTh232SimPrimaryGeneratorAction_h
+#define LMOTh232SimPrimaryGeneratorAction_h 1
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 
 class G4ParticleGun;
 class G4Event;
 
-namespace B1
+namespace LMOTh232Sim
 {
 
 /// The primary generator action class with particle gun.
@@ -58,8 +58,7 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     G4ParticleGun* fParticleGun = nullptr;  // pointer a to G4 gun class
 };
 
-}  // namespace B1
+}  // namespace LMOTh232Sim
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

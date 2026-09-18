@@ -22,7 +22,7 @@ cmake ..
 make -j$(nproc)
 ```
 
-**Batch mode:** `./exampleB1 run.mac` (from `build/`)
+**Batch mode:** `./LMOTh232Sim run.mac` (from `build/`)
 
 **ROOT macros live in `macros/`** (`EnergyReconstruction.C`, `spectrum.C`, `ParticleTimeInformation.C`, `Trigger.C`, `PileUp.C`). Run them from `build/` (the input/output ROOT files are there):
 
@@ -39,7 +39,7 @@ ACLiC artifacts (`EnergyReconstruction_C.so`, `EnergyReconstruction_C.d`, `..._r
 
 ## Architecture
 
-### Class Structure (all in namespace `B1`)
+### Class Structure (all in namespace `LMOTh232Sim`)
 
 | Class | Role |
 |---|---|
@@ -224,7 +224,7 @@ Crystal1 and Crystal2 are processed independently. A particle born in Crystal1 t
 
 ```
 run.mac (1×10⁸ Th-232 decays, WTh wire source)
-  → exampleB1 (Geant4)
+  → LMOTh232Sim (Geant4)
     → LMO_Th232.root (per-track, 2 TTrees)
       → macros/EnergyReconstruction.C (tree-building + recursive sum
         + zero-deposit filter + resolution smearing)

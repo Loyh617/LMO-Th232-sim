@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file PrimaryGeneratorAction.cc
-/// \brief Implementation of the B1::PrimaryGeneratorAction class
+/// \brief Implementation of the LMOTh232Sim::PrimaryGeneratorAction class
 
 #include "PrimaryGeneratorAction.hh"
 
@@ -36,10 +36,9 @@
 #include "Randomize.hh"
 #include <cmath>
 
-namespace B1
+namespace LMOTh232Sim
 {
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 PrimaryGeneratorAction::PrimaryGeneratorAction()
 {
@@ -47,14 +46,12 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   fParticleGun = new G4ParticleGun(n_particle);
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
   delete fParticleGun;
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 {
@@ -94,6 +91,5 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
   fParticleGun->GeneratePrimaryVertex(event);
 }
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace LMOTh232Sim
