@@ -3,9 +3,7 @@
 #
 
 # Specify a viewer, e.g., /vis/open OGL, or allow a system choice:
-# 显式 OGLI(2026-09-17):默认 TSG 在 WSLg 下渲染不出画面;且本构建里 "OGL"
-# 别名被 TSG_QT_GLES 抢注,必须用 OGLI 才是经典 OpenGL(Qt)viewer
-/vis/open OGLI
+/vis/open OGL
 # This chooses a graphics system (in order of priority):
 # - by argument in G4VisExecutive construction.
 # - by environment variable, G4VIS_DEFAULT_DRIVER.
